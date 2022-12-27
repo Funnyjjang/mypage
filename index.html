@@ -79,10 +79,19 @@
             margin-top: 20px;
         }
 
-        .mybtn > button {
+        .mybtn>button {
             margin-right: 10px;
         }
 
+        .mystars {
+
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: center;
+
+            margin-bottom: 15px;
+        }
     </style>
 </head>
 
@@ -95,6 +104,17 @@
         <div class="form-floating mb-3">
             <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
             <label for="floatingInput">영화 URL</label>
+        </div>
+    <div class="mystars">
+            <label class="input-group-text" for="inputGroupSelect01">별점</label>
+            <select class="form-select" id="inputGroupSelect01">
+                <option selected> -- 선택하기 -- </option>
+                <option value="1">⭐</option>
+                <option value="2">⭐⭐</option>
+                <option value="3">⭐⭐⭐</option>
+                <option value="4">⭐⭐⭐⭐</option>
+                <option value="5">⭐⭐⭐⭐⭐</option>
+            </select>
         </div>
         <div class="form-floating">
             <input type="password" class="form-control" id="floatingPassword" placeholder="Password">
